@@ -42,4 +42,14 @@ public class ProductService {
 
     }
 
+    //Method to delete products
+    public ResponseEntity<ResponseModel> delete(long id){
+
+        pr.deleteById(id);
+
+        rm.setMessage("O produto foi removido com sucesso!");
+        return new ResponseEntity<ResponseModel>(rm, HttpStatus.OK);
+
+    }
+
 }
