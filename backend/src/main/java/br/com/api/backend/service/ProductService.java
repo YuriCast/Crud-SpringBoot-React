@@ -23,17 +23,21 @@ public class ProductService {
         return pr.findAll();
     }
 
-    // Method to register products
-    public ResponseEntity<?> register(ProductModel pm){
+    // Method to register or change products
+    public ResponseEntity<?> registerChange(ProductModel pm, String act){
 
         if(pm.getName().equals("")){
-            rm.setMessage("O nome da marca é obrigatório");
+            rm.setMessage("O nome do produto é obrigatório");
             return new ResponseEntity<ResponseModel>(rm, HttpStatus.BAD_REQUEST);
         }else if(pm.getBrand().equals("")){
             rm.setMessage("O nome da marca é obrigatório");
             return new ResponseEntity<ResponseModel>(rm, HttpStatus.BAD_REQUEST);
         }else{
-            return new ResponseEntity<ProductModel>(pr.save(pm), HttpStatus.CREATED);
+            if(act.equals("register")){
+                return new ResponseEntity<ProductModel>(pr.save(pm), HttpStatus.CREATED);
+            }else{
+                return new ResponseEntity<ProductModel>(pr.save(pm), HttpStatus.OK);
+            }
         }
 
     }
