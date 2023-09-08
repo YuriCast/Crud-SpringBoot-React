@@ -16,8 +16,8 @@ public class ProductModel {
  
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long codigo;
-    private String nome;
-    private String marca;
+    private Long id;
+    private String name;
+    private String brand;
 
 }

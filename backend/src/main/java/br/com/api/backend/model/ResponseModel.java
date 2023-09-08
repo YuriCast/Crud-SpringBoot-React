@@ -8,8 +8,8 @@ import lombok.Setter;
 @Component
 @Getter
 @Setter
-public class AnswerModel {
+public class ResponseModel {
     
-    private String mensagem;
+    private String message;
 
 }
