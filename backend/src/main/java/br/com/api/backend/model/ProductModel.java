@@ -1,4 +1,4 @@
-package br.com.api.backend.modelo;
+package br.com.api.backend.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,7 +12,7 @@ import lombok.Setter;
 @Table(name = "produtos")
 @Getter
 @Setter
-public class ProdutoModelo {
+public class ProductModel {
  
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

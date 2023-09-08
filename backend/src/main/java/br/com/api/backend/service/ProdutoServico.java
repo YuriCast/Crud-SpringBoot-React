@@ -1,4 +1,4 @@
-package br.com.api.backend.servico;
+package br.com.api.backend.service;
 
 public class ProdutoServico {
     
