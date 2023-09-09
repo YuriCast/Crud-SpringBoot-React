@@ -1,6 +1,8 @@
+import './TableStyles.css'
+
 export default function Table() {
   return (
-    <table>
+    <table className="content-table">
       <thead>
         <tr>
           <th>#</th>
@@ -11,9 +13,15 @@ export default function Table() {
       </thead>
       <tbody>
         <tr>
+          <td>1</td>
+          <td>asdas</td>
+          <td>dasda</td>
           <td></td>
-          <td></td>
-          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>fasf</td>
+          <td>fasfas</td>
           <td></td>
         </tr>
       </tbody>

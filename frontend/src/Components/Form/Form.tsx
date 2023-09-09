@@ -1,3 +1,5 @@
+import './FormStyles.css'
+
 export default function Form() {
   return (
     <form>
