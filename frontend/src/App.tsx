@@ -13,19 +13,21 @@ function App() {
   }
 
   // UseState
-  const [btnRegister, setBtnRegister] = useState(true);
+  const [btnRegister, setBtnRegister] = useState(true)
   const [products, setProducts] = useState([])
+  const [objProduct, setObjProduct] = useState(product)
   
   // UseEffect
   useEffect(() => {
     fetch("http://localhost:8080/list")
     .then(response => response.json())
-    .then(converted_response => setProducts(converted_response));
-  }, []);
+    .then(converted_response => setProducts(converted_response))
+  }, [])
 
   // Return
   return (
     <>
+    <p>{JSON.stringify(objProduct)}</p>
       <Form btn={btnRegister}/>
       <Table vector={products}/>
     </>
