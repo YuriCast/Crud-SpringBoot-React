@@ -24,6 +24,49 @@ export default function Table() {
           <td>fasfas</td>
           <td></td>
         </tr>
+        <tr>
+          <td>2</td>
+          <td>fasf</td>
+          <td>fasfas</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>fasf</td>
+          <td>fasfas</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>fasf</td>
+          <td>fasfas</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>fasf</td>
+          <td>fasfas</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>fasf</td>
+          <td>fasfas</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>fasf</td>
+          <td>fasfas</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>fasf</td>
+          <td>fasfas</td>
+          <td></td>
+        </tr>
+        
       </tbody>
     </table>
   )

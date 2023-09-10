@@ -3,13 +3,16 @@ import './FormStyles.css'
 export default function Form() {
   return (
     <form>
-      <input type="text" placeholder="Name" />
-      <input type="text" placeholder="Brand" />
-
-      <input type="button" value="Register" />
-      <input type="button" value="Change" />
-      <input type="button" value="Delete" />
-      <input type="button" value="Calcel" />
+        <div className='input-container'>
+          <input type="text" placeholder="Name" className='input' />
+          <input type="text" placeholder="Brand" className='input' />
+        </div>
+        <div className='btn'>
+          <input type="button" value="Register" className='register' />
+          <input type="button" value="Change" className='change' />
+          <input type="button" value="Delete" className='delete' />
+          <input type="button" value="Calcel" className='cancel' />
+      </div>
     </form>
   )
 }

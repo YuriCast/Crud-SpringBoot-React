@@ -1,0 +1,53 @@
+form {
+    margin-top: 28px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+
+.register {
+    background-color: #009879;
+    font-weight: bold;
+    padding: 8px 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.change {
+    background-color: #ffd700;
+    font-weight: bold;
+    padding: 8px 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: #dc143c;
+    font-weight: bold;
+    padding: 8px 14px;
+    color: white;
+    cursor: pointer;
+}
+.cancel {
+    background-color: #a2a2a4;
+    font-weight: bold;
+    padding: 8px 14px;
+    color: white;
+    cursor: pointer;
+}
