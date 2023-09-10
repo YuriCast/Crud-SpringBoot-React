@@ -1,6 +1,6 @@
 import './TableStyles.css'
 
-export default function Table() {
+export default function Table({vector}) {
   return (
     <table className="content-table">
       <thead>
@@ -12,61 +12,16 @@ export default function Table() {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>asdas</td>
-          <td>dasda</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>fasf</td>
-          <td>fasfas</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>fasf</td>
-          <td>fasfas</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>fasf</td>
-          <td>fasfas</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>fasf</td>
-          <td>fasfas</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>fasf</td>
-          <td>fasfas</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>fasf</td>
-          <td>fasfas</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>fasf</td>
-          <td>fasfas</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>fasf</td>
-          <td>fasfas</td>
-          <td></td>
-        </tr>
-        
+        {
+          vector.map((obj, index) => (
+            <tr key={index}>
+              <td>{index+1}</td>
+              <td>{obj.name}</td>
+              <td>{obj.brand}</td>
+              <td className='tdBtn'><button className='btn'>Select</button></td>
+            </tr>
+          ))
+        }
       </tbody>
     </table>
   )

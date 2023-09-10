@@ -32,3 +32,20 @@
 .content-table tbody tr:last-of-type {
     border-bottom: 2px solid #009879;
 }
+
+.tdBtn {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    background-color: #009879;
+    border-radius: 6px;
+    padding: 8px 14px;
+    color: white;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+

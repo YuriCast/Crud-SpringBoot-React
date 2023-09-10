@@ -19,9 +19,8 @@ function App() {
   // Return
   return (
     <>
-    <p>{JSON.stringify(products)}</p>
       <Form btn={btnRegister}/>
-      <Table />
+      <Table vector={products}/>
     </>
   )
 }
