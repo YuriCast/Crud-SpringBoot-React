@@ -24,11 +24,16 @@ function App() {
     .then(converted_response => setProducts(converted_response))
   }, [])
 
+  // Get data from form
+  const typing = (e) => {
+    setObjProduct({...objProduct, [e.target.name] : e.target.value})
+  }
+
   // Return
   return (
     <>
     <p>{JSON.stringify(objProduct)}</p>
-      <Form btn={btnRegister}/>
+      <Form btn={btnRegister} keyboardEvent={typing}/>
       <Table vector={products}/>
     </>
   )

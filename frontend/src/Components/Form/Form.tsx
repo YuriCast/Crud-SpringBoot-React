@@ -1,11 +1,11 @@
 import './FormStyles.css'
 
-export default function Form({ btn }) {
+export default function Form({ btn, keyboardEvent }) {
   return (
     <form>
         <div className='input-container'>
-          <input type="text" placeholder="Name" className='input' />
-          <input type="text" placeholder="Brand" className='input' />
+          <input type="text" onChange={keyboardEvent} name='name' placeholder="Name" className='input' />
+          <input type="text" onChange={keyboardEvent} name='brand' placeholder="Brand" className='input' />
         </div>
 
         {
