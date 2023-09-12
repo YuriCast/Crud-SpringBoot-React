@@ -18,7 +18,7 @@ export default function Table({vector, select}) {
               <td>{index+1}</td>
               <td>{obj.name}</td>
               <td>{obj.brand}</td>
-              <td className='tdBtn'><button onClick={() => {select(index)}} className='btn'>Select</button></td>
+              <td className='tdBtn'><button className='btn' onClick={() => {select(index)}} >Select</button></td>
             </tr>
           ))
         }

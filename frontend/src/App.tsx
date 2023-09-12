@@ -56,6 +56,7 @@ function App() {
   // Clean Form
   const cleanForm = () => {
     setObjProduct(product)
+    setBtnRegister(true)
   }
 
   // Select Product
@@ -67,7 +68,7 @@ function App() {
   // Return
   return (
     <>
-      <Form btn={btnRegister} keyboardEvent={typing} register={register} obj={objProduct}/>
+      <Form btn={btnRegister} keyboardEvent={typing} register={register} obj={objProduct} cancel={cleanForm}/>
       <Table vector={products} select={selectProduct} />
     </>
   )
