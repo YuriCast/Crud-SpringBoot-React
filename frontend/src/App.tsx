@@ -41,7 +41,14 @@ function App() {
     })
     .then(response => response.json())
     .then(converted_response => {
-      console.log(converted_response)
+      
+      if(converted_response.message !== undefined){
+        alert(converted_response.message)
+      }else{
+        setProducts([...products, converted_response])
+        alert('Produto Cadastrado')
+      }
+
     })
   }
 
