@@ -1,6 +1,6 @@
 import './FormStyles.css'
 
-export default function Form({ btn, keyboardEvent }) {
+export default function Form({ btn, keyboardEvent, register }) {
   return (
     <form>
         <div className='input-container'>
@@ -11,7 +11,7 @@ export default function Form({ btn, keyboardEvent }) {
         {
           btn
           ?
-          <input type="button" value="Register" className='register' />
+          <input type="button" value="Register" onClick={register} className='register' />
           :
         <div className='btn'>
           <input type="button" value="Change" className='change' />
