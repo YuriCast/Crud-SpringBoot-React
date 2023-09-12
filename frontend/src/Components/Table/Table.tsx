@@ -1,6 +1,6 @@
 import './TableStyles.css'
 
-export default function Table({vector}) {
+export default function Table({vector, select}) {
   return (
     <table className="content-table">
       <thead>
@@ -18,7 +18,7 @@ export default function Table({vector}) {
               <td>{index+1}</td>
               <td>{obj.name}</td>
               <td>{obj.brand}</td>
-              <td className='tdBtn'><button className='btn'>Select</button></td>
+              <td className='tdBtn'><button onClick={() => {select(index)}} className='btn'>Select</button></td>
             </tr>
           ))
         }
