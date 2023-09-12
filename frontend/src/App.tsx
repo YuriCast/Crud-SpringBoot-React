@@ -47,15 +47,21 @@ function App() {
       }else{
         setProducts([...products, converted_response])
         alert('Produto Cadastrado')
+        cleanForm()
       }
 
     })
   }
 
+  // Clean Form
+  const cleanForm = () => {
+    setObjProduct(product)
+  }
+
   // Return
   return (
     <>
-      <Form btn={btnRegister} keyboardEvent={typing} register={register}/>
+      <Form btn={btnRegister} keyboardEvent={typing} register={register} obj={objProduct}/>
       <Table vector={products}/>
     </>
   )
